@@ -132,7 +132,7 @@
 	<TeamFormation>
 		<TmmStart>
 			<Player1>-14.5 0 10</Player1>	<!-- Goalie -->
-			<Player2>0 0  0</Player2>	<!-- forward -->
+			<Player2>-3 0  0</Player2>	<!-- forward -->
 			<Player3>-3.5 -2 0</Player3>	<!-- forward -->
 			<Player4>-3.5 2 0</Player4>	<!-- center -->
 			<Player5>-5 0 0</Player5>	<!-- guard -->

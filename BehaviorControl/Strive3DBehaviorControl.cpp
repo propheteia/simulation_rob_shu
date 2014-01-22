@@ -782,7 +782,8 @@ void Strive3DBehaviorControl::execute()
 		if ( WM.getSelf().GetUnum() != 1 )
         {
 			headMotionRequest.headMotionType = HeadMotionRequest::automode;
-            Decision();
+			Stand();
+//            Decision();
             //KickTo(Vector2f(10,0));
 			//GoToPoint(Vector2f(12,12),1);		
             //Debug(0.12,0.04,0.0);

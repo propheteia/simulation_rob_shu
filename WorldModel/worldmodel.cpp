@@ -425,8 +425,13 @@ void WorldModel::updateNewBall()
 {
   if (CanSeeBall())
   {
+    nBall->reset_cycles();
     nBall->updateFromVision(mVisionSenseMap[BALL]);
-    nBall->printVisionModel();
+  }
+  else
+  {
+    nBall->add_cycle();
+    nBall->changeState();
   }
 }
 
@@ -447,10 +452,10 @@ void WorldModel::UpdateBall()
 		else
 			mICanSeeBall = false;
 	}
-     cout<<"************** OLD BALL ***********************"<<endl;
-     cout<<"G_POS:"<<mBall->pos<<endl;
-     cout<<"L_POS:"<<mBall->pos_local<<endl;
-     cout<<"DIST: "<<mBall->distance<<endl;
+//      cout<<"************** OLD BALL ***********************"<<endl;
+//      cout<<"G_POS:"<<mBall->pos<<endl;
+//      cout<<"L_POS:"<<mBall->pos_local<<endl;
+//      cout<<"DIST: "<<mBall->distance<<endl;
 }
 
 void WorldModel::UpdatePlayers()//Neil 2009.3
@@ -635,12 +640,15 @@ void WorldModel::CalculateVisionObjectLocalPos()
         vs.localPosInVision[0] = distance * gCos(phi) * gCos(theta);
         vs.localPosInVision[1] = distance * gCos(phi) * gSin(theta);
         vs.localPosInVision[2] = distance * gSin(phi);
-
-	vs.distanceToSelf = vs.distance*gCos(gDegToRad(vs.phi));
-	
-	 /**add by Neil*/
+	vs.distanceToSelf = vs.distance*gCos(phi);
+		 /**add by Neil*/
 	vs.localPos = NAO->GetRobotCameraMatrix(Nao::PART_HEAD) * vs.localPosInVision;
-
+	if (static_cast<VisionObject>(i)==8)
+	{
+	cout<<"*** FLAG: "<<static_cast<VisionObject>(i)<<endl;
+	 cout<<"DISTANCE:"<<distance<<"DistanceSELF:"<<vs.distanceToSelf<<"PHI:"<<vs.phi<<endl;
+        cout<<"*** FLAG OVER"<<endl;
+	}
 	aLOG << "Object:" << i <<" x:" <<  vs.localPosInVision[0] << " y:"<< vs.localPosInVision[1] << " z:"<< vs.localPosInVision[2] << endl;
 	aLOG << "Object:" << i <<" x:" <<  vs.localPos[0] << " y:"<< vs.localPos[1] << " z:"<< vs.localPos[2] << endl;
 
