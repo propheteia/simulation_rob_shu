@@ -1,0 +1,249 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ANY	addr.cpp	/^        const Addr::HostType Addr::ANY = INADDR_ANY;$/;"	m	class:rcss::net::Addr	file:
+ANY	addr.hpp	/^            static const HostType ANY;$/;"	m	class:rcss::net::Addr
+AcceptErr	exception.cpp	/^        AcceptErr::AcceptErr( int err ) throw()$/;"	f	class:rcss::net::AcceptErr
+AcceptErr	exception.hpp	/^        class AcceptErr$/;"	c	namespace:rcss::net
+Addr	addr.cpp	/^        Addr::Addr( PortType port, HostType host )$/;"	f	class:rcss::net::Addr
+Addr	addr.cpp	/^        Addr::Addr( PortType port, const std::string& host )$/;"	f	class:rcss::net::Addr
+Addr	addr.cpp	/^        Addr::Addr( const AddrType& addr )$/;"	f	class:rcss::net::Addr
+Addr	addr.hpp	/^        class Addr$/;"	c	namespace:rcss::net
+AddrImpl	addr.cpp	/^			AddrImpl( Addr::PortType port, Addr::HostType host )$/;"	f	class:rcss::net::AddrImpl
+AddrImpl	addr.cpp	/^            AddrImpl( Addr::PortType port, const std::string& host )$/;"	f	class:rcss::net::AddrImpl
+AddrImpl	addr.cpp	/^            AddrImpl( const Addr::AddrType& addr )$/;"	f	class:rcss::net::AddrImpl
+AddrImpl	addr.cpp	/^        class AddrImpl$/;"	c	namespace:rcss::net	file:
+AddrType	addr.hpp	/^            typedef struct sockaddr_in AddrType;$/;"	t	class:rcss::net::Addr	typeref:struct:rcss::net::Addr::sockaddr_in
+BROADCAST	addr.cpp	/^        const Addr::HostType Addr::BROADCAST = INADDR_BROADCAST;$/;"	m	class:rcss::net::Addr	file:
+BROADCAST	addr.hpp	/^            static const HostType BROADCAST;$/;"	m	class:rcss::net::Addr
+BindErr	exception.cpp	/^        BindErr::BindErr( int err ) throw()$/;"	f	class:rcss::net::BindErr
+BindErr	exception.hpp	/^        class BindErr$/;"	c	namespace:rcss::net
+CHECK	socket.hpp	/^            enum CheckingType { CHECK, DONT_CHECK };$/;"	e	enum:rcss::net::Socket::CheckingType
+CONN_ON_READ	socketstreambuf.hpp	/^            enum ConnType { CONN_ON_READ, NO_CONN };$/;"	e	enum:rcss::net::SocketStreamBuf::ConnType
+CheckingType	socket.hpp	/^            enum CheckingType { CHECK, DONT_CHECK };$/;"	g	class:rcss::net::Socket
+ConnType	socketstreambuf.hpp	/^            enum ConnType { CONN_ON_READ, NO_CONN };$/;"	g	class:rcss::net::SocketStreamBuf
+ConnectErr	exception.cpp	/^        ConnectErr::ConnectErr( int err ) throw()$/;"	f	class:rcss::net::ConnectErr
+ConnectErr	exception.hpp	/^        class ConnectErr$/;"	c	namespace:rcss::net
+DEBUG_NET	Net.h	39;"	d
+DONT_CHECK	socket.hpp	/^            enum CheckingType { CHECK, DONT_CHECK };$/;"	e	enum:rcss::net::Socket::CheckingType
+Done	Net.cpp	/^void Net::Done()$/;"	f	class:Net
+Error	addr.hpp	/^            enum Error { eADDR_OK, eSERV_NOT_FOUND, eHOST_NOT_FOUND };$/;"	g	class:rcss::net::Addr
+GetMessage	Net.cpp	/^bool Net::GetMessage ( string& msg )$/;"	f	class:Net
+GetNameErr	exception.cpp	/^        GetNameErr::GetNameErr( int err ) throw()$/;"	f	class:rcss::net::GetNameErr
+GetNameErr	exception.hpp	/^        class GetNameErr$/;"	c	namespace:rcss::net
+HAVE_ALLOCA	config.h	15;"	d
+HAVE_ALLOCA_H	config.h	19;"	d
+HAVE_ARPA_INET_H	config.h	22;"	d
+HAVE_KEROSIN_H	config.h	4;"	d
+HAVE_NETDB_H	config.h	25;"	d
+HAVE_NETINET_IN_H	config.h	28;"	d
+HAVE_RESOLV_H	config.h	31;"	d
+HAVE_SOCKET	config.h	9;"	d
+HAVE_SOCKLEN_T	config.h	12;"	d
+HAVE_SYS_SOCKET_H	config.h	34;"	d
+HAVE_UNISTD_H	config.h	37;"	d
+Handler	handler.cpp	/^		Handler::Handler()$/;"	f	class:rcss::net::Handler
+Handler	handler.hpp	/^		class Handler$/;"	c	namespace:rcss::net
+HostNotFound	exception.cpp	/^        HostNotFound::HostNotFound( int err ) throw()$/;"	f	class:rcss::net::HostNotFound
+HostNotFound	exception.hpp	/^        class HostNotFound$/;"	c	namespace:rcss::net
+HostType	addr.hpp	/^            typedef boost::uint32_t HostType;$/;"	t	class:rcss::net::Addr
+INVALIDSOCKET	socket.cpp	/^                const Socket::SocketDesc Socket::INVALIDSOCKET = INVALID_SOCKET;$/;"	m	class:rcss::net::Socket	file:
+INVALIDSOCKET	socket.hpp	/^                        static const SocketDesc INVALIDSOCKET;$/;"	m	class:rcss::net::Socket
+IOSocketStream	iosocketstream.hpp	/^            IOSocketStream( Socket& socket,$/;"	f	class:rcss::net::IOSocketStream
+IOSocketStream	iosocketstream.hpp	/^        class IOSocketStream$/;"	c	namespace:rcss::net
+ISocketStream	isocketstream.hpp	/^            ISocketStream( Socket& socket,$/;"	f	class:rcss::net::ISocketStream
+ISocketStream	isocketstream.hpp	/^        class ISocketStream$/;"	c	namespace:rcss::net
+Init	Net.cpp	/^bool Net::Init()$/;"	f	class:Net
+ListenErr	exception.cpp	/^        ListenErr::ListenErr( int err ) throw()$/;"	f	class:rcss::net::ListenErr
+ListenErr	exception.hpp	/^        class ListenErr$/;"	c	namespace:rcss::net
+NET	Net.h	38;"	d
+NET_H	Net.h	22;"	d
+NO_CONN	socketstreambuf.hpp	/^            enum ConnType { CONN_ON_READ, NO_CONN };$/;"	e	enum:rcss::net::SocketStreamBuf::ConnType
+Net	Net.cpp	/^Net::Net(string host, int port):mHost(host),mPort(port),mIsValid(false)$/;"	f	class:Net
+Net	Net.h	/^class Net$/;"	c
+NetManager	Net.h	/^	NetManager(){nets.clear();}$/;"	f	class:NetManager
+NetManager	Net.h	/^class NetManager$/;"	c
+OSocketStream	osocketstream.hpp	/^            OSocketStream( Socket& socket,$/;"	f	class:rcss::net::OSocketStream
+OSocketStream	osocketstream.hpp	/^        class OSocketStream$/;"	c	namespace:rcss::net
+OpenErr	exception.cpp	/^        OpenErr::OpenErr( int err ) throw()$/;"	f	class:rcss::net::OpenErr
+OpenErr	exception.hpp	/^        class OpenErr$/;"	c	namespace:rcss::net
+PortType	addr.hpp	/^            typedef boost::uint16_t PortType;$/;"	t	class:rcss::net::Addr
+PutMessage	Net.cpp	/^void Net::PutMessage ( const string& msg )$/;"	f	class:Net
+RCSS_NET_ADDR_HPP	addr.hpp	22;"	d
+RCSS_NET_EXCEPTION_HPP	exception.hpp	22;"	d
+RCSS_NET_HANDLER_HPP	handler.hpp	22;"	d
+RCSS_NET_IOSOCKETSTREAM_HPP	iosocketstream.hpp	22;"	d
+RCSS_NET_ISOCKETSTREAM_HPP	isocketstream.hpp	22;"	d
+RCSS_NET_OSOCKETSTREAM_HPP	osocketstream.hpp	23;"	d
+RCSS_NET_SOCKETSTREAMBUF_HPP	socketstreambuf.hpp	23;"	d
+RCSS_NET_SOCKET_HPP	socket.hpp	22;"	d
+RCSS_NET_TCPSOCKET_HPP	tcpsocket.hpp	23;"	d
+RCSS_NET_UDPSOCKET_HPP	udpsocket.hpp	23;"	d
+SelectInput	Net.cpp	/^bool Net::SelectInput()$/;"	f	class:Net
+SetPort	Net.h	/^	void SetPort(int port) { mPort = port; }$/;"	f	class:Net
+SetServer	Net.h	/^	void SetServer(string host) { mHost = host; }$/;"	f	class:Net
+Socket	socket.cpp	/^        Socket::Socket( SocketDesc s )$/;"	f	class:rcss::net::Socket
+Socket	socket.cpp	/^        Socket::Socket()$/;"	f	class:rcss::net::Socket
+Socket	socket.hpp	/^        class Socket$/;"	c	namespace:rcss::net
+SocketDesc	socket.hpp	/^                        typedef SOCKET SocketDesc;$/;"	t	class:rcss::net::Socket
+SocketStreamBuf	socketstreambuf.hpp	/^            SocketStreamBuf( Socket& socket,$/;"	f	class:rcss::net::SocketStreamBuf
+SocketStreamBuf	socketstreambuf.hpp	/^        class SocketStreamBuf$/;"	c	namespace:rcss::net
+TCPSocket	tcpsocket.cpp	/^        TCPSocket::TCPSocket( SocketDesc& s )$/;"	f	class:rcss::net::TCPSocket
+TCPSocket	tcpsocket.cpp	/^        TCPSocket::TCPSocket( const Addr& addr )$/;"	f	class:rcss::net::TCPSocket
+TCPSocket	tcpsocket.cpp	/^        TCPSocket::TCPSocket( const Addr& addr, const Addr& dest )$/;"	f	class:rcss::net::TCPSocket
+TCPSocket	tcpsocket.cpp	/^        TCPSocket::TCPSocket()$/;"	f	class:rcss::net::TCPSocket
+TCPSocket	tcpsocket.hpp	/^        class TCPSocket$/;"	c	namespace:rcss::net
+UDPSocket	udpsocket.cpp	/^        UDPSocket::UDPSocket( SocketDesc& s )$/;"	f	class:rcss::net::UDPSocket
+UDPSocket	udpsocket.cpp	/^        UDPSocket::UDPSocket( const Addr& addr )$/;"	f	class:rcss::net::UDPSocket
+UDPSocket	udpsocket.cpp	/^        UDPSocket::UDPSocket( const Addr& addr, const Addr& dest )$/;"	f	class:rcss::net::UDPSocket
+UDPSocket	udpsocket.cpp	/^        UDPSocket::UDPSocket()$/;"	f	class:rcss::net::UDPSocket
+UDPSocket	udpsocket.hpp	/^        class UDPSocket$/;"	c	namespace:rcss::net
+accept	socket.cpp	/^        Socket* Socket::accept(Addr& addr)$/;"	f	class:rcss::net::Socket
+accept	socket.cpp	/^        Socket::accept( Socket& sock )$/;"	f	class:rcss::net::Socket
+addNetwork	Net.cpp	/^void NetManager::addNetwork(string name)$/;"	f	class:NetManager
+bind	socket.cpp	/^        Socket::bind( const Addr& addr )$/;"	f	class:rcss::net::Socket
+char_type	socketstreambuf.hpp	/^            typedef char char_type;$/;"	t	class:rcss::net::SocketStreamBuf
+close	socket.cpp	/^        Socket::close()$/;"	f	class:rcss::net::Socket
+closeFD	socket.cpp	/^        Socket::closeFD( SocketDesc* s )$/;"	f	class:rcss::net::Socket
+connect	socket.cpp	/^        Socket::connect( const Addr& addr )$/;"	f	class:rcss::net::Socket
+doOpen	tcpsocket.cpp	/^        TCPSocket::doOpen( SocketDesc& fd )$/;"	f	class:rcss::net::TCPSocket
+doOpen	udpsocket.cpp	/^        UDPSocket::doOpen( SocketDesc& fd )$/;"	f	class:rcss::net::UDPSocket
+eADDR_OK	addr.hpp	/^            enum Error { eADDR_OK, eSERV_NOT_FOUND, eHOST_NOT_FOUND };$/;"	e	enum:rcss::net::Addr::Error
+eHOST_NOT_FOUND	addr.hpp	/^            enum Error { eADDR_OK, eSERV_NOT_FOUND, eHOST_NOT_FOUND };$/;"	e	enum:rcss::net::Addr::Error
+eSERV_NOT_FOUND	addr.hpp	/^            enum Error { eADDR_OK, eSERV_NOT_FOUND, eHOST_NOT_FOUND };$/;"	e	enum:rcss::net::Addr::Error
+err	exception.cpp	/^        AcceptErr::err() const throw()$/;"	f	class:rcss::net::AcceptErr
+err	exception.cpp	/^        BindErr::err() const throw()$/;"	f	class:rcss::net::BindErr
+err	exception.cpp	/^        ConnectErr::err() const throw()$/;"	f	class:rcss::net::ConnectErr
+err	exception.cpp	/^        GetNameErr::err() const throw()$/;"	f	class:rcss::net::GetNameErr
+err	exception.cpp	/^        HostNotFound::err() const throw()$/;"	f	class:rcss::net::HostNotFound
+err	exception.cpp	/^        ListenErr::err() const throw()$/;"	f	class:rcss::net::ListenErr
+err	exception.cpp	/^        OpenErr::err() const throw()$/;"	f	class:rcss::net::OpenErr
+getAddr	addr.cpp	/^            getAddr() const$/;"	f	class:rcss::net::AddrImpl
+getAddr	addr.cpp	/^        Addr::getAddr() const$/;"	f	class:rcss::net::Addr
+getDest	socket.cpp	/^        Socket::getDest() const$/;"	f	class:rcss::net::Socket
+getFD	socket.cpp	/^        Socket::getFD() const$/;"	f	class:rcss::net::Socket
+getHost	addr.cpp	/^            getHost() const$/;"	f	class:rcss::net::AddrImpl
+getHost	addr.cpp	/^        Addr::getHost() const$/;"	f	class:rcss::net::Addr
+getHostStr	addr.cpp	/^            getHostStr() const$/;"	f	class:rcss::net::AddrImpl
+getHostStr	addr.cpp	/^        Addr::getHostStr() const$/;"	f	class:rcss::net::Addr
+getName	socket.cpp	/^        Socket::getName() const$/;"	f	class:rcss::net::Socket
+getPeer	socket.cpp	/^        Socket::getPeer() const$/;"	f	class:rcss::net::Socket
+getPort	addr.cpp	/^            getPort() const$/;"	f	class:rcss::net::AddrImpl
+getPort	addr.cpp	/^        Addr::getPort() const$/;"	f	class:rcss::net::Addr
+getPortStr	addr.cpp	/^		    getPortStr( const std::string& proto = "" ) const$/;"	f	class:rcss::net::AddrImpl
+getPortStr	addr.cpp	/^		Addr::getPortStr( const std::string& proto ) const$/;"	f	class:rcss::net::Addr
+instance	handler.cpp	/^		Handler::instance()$/;"	f	class:rcss::net::Handler
+int_type	socketstreambuf.hpp	/^            typedef int int_type;$/;"	t	class:rcss::net::SocketStreamBuf
+isConnected	socket.cpp	/^        Socket::isConnected() const$/;"	f	class:rcss::net::Socket
+isOpen	socket.cpp	/^        Socket::isOpen() const$/;"	f	class:rcss::net::Socket
+isValid	Net.h	/^	bool  isValid(){return mIsValid;}$/;"	f	class:Net
+listen	socket.cpp	/^        Socket::listen( int backlog )$/;"	f	class:rcss::net::Socket
+mHost	Net.h	/^	string mHost;$/;"	m	class:Net
+mIsValid	Net.h	/^	bool  mIsValid;$/;"	m	class:Net
+mPort	Net.h	/^	int mPort;$/;"	m	class:Net
+mSocket	Net.h	/^	TCPSocket mSocket;$/;"	m	class:Net
+m_WSAData	handler.hpp	/^			WSADATA m_WSAData;$/;"	m	class:rcss::net::Handler
+m_addr	addr.cpp	/^			Addr::AddrType m_addr;$/;"	m	class:rcss::net::AddrImpl	file:
+m_bufsize	socketstreambuf.hpp	/^            std::streamsize m_bufsize;$/;"	m	class:rcss::net::SocketStreamBuf
+m_connect	socketstreambuf.hpp	/^            ConnType m_connect;$/;"	m	class:rcss::net::SocketStreamBuf
+m_end_point	socketstreambuf.hpp	/^            Addr m_end_point;$/;"	m	class:rcss::net::SocketStreamBuf
+m_err	exception.hpp	/^            int m_err;$/;"	m	class:rcss::net::AcceptErr
+m_err	exception.hpp	/^            int m_err;$/;"	m	class:rcss::net::BindErr
+m_err	exception.hpp	/^            int m_err;$/;"	m	class:rcss::net::ConnectErr
+m_err	exception.hpp	/^            int m_err;$/;"	m	class:rcss::net::GetNameErr
+m_err	exception.hpp	/^            int m_err;$/;"	m	class:rcss::net::HostNotFound
+m_err	exception.hpp	/^            int m_err;$/;"	m	class:rcss::net::ListenErr
+m_err	exception.hpp	/^            int m_err;$/;"	m	class:rcss::net::OpenErr
+m_errno	addr.cpp	/^            int m_errno;$/;"	m	class:rcss::net::AddrImpl	file:
+m_error	addr.cpp	/^            Addr::Error m_error;$/;"	m	class:rcss::net::AddrImpl	file:
+m_handle	socket.hpp	/^            boost::shared_ptr< SocketDesc > m_handle;$/;"	m	class:rcss::net::Socket
+m_handler	addr.cpp	/^			Handler& m_handler;$/;"	m	class:rcss::net::AddrImpl	file:
+m_handler	socket.hpp	/^                        Handler* m_handler;$/;"	m	class:rcss::net::Socket
+m_host_name	addr.cpp	/^            mutable std::string m_host_name;$/;"	m	class:rcss::net::AddrImpl	file:
+m_impl	addr.hpp	/^            boost::shared_ptr< AddrImpl > m_impl;$/;"	m	class:rcss::net::Addr
+m_inbuf	socketstreambuf.hpp	/^            char_type* m_inbuf;$/;"	m	class:rcss::net::SocketStreamBuf
+m_outbuf	socketstreambuf.hpp	/^            char_type* m_outbuf;$/;"	m	class:rcss::net::SocketStreamBuf
+m_port_name	addr.cpp	/^            mutable std::string m_port_name;$/;"	m	class:rcss::net::AddrImpl	file:
+m_remained	socketstreambuf.hpp	/^            int m_remained;$/;"	m	class:rcss::net::SocketStreamBuf
+m_remained_char	socketstreambuf.hpp	/^            char_type m_remained_char;$/;"	m	class:rcss::net::SocketStreamBuf
+m_socket	socketstreambuf.hpp	/^            Socket& m_socket;$/;"	m	class:rcss::net::SocketStreamBuf
+m_valid	handler.hpp	/^            bool m_valid;$/;"	m	class:rcss::net::Handler
+net	addr.cpp	/^    namespace net$/;"	n	namespace:rcss	file:
+net	addr.hpp	/^    namespace net$/;"	n	namespace:rcss
+net	exception.cpp	/^    namespace net$/;"	n	namespace:rcss	file:
+net	exception.hpp	/^    namespace net$/;"	n	namespace:rcss
+net	handler.cpp	/^	namespace net$/;"	n	namespace:rcss	file:
+net	handler.hpp	/^    namespace net$/;"	n	namespace:rcss
+net	iosocketstream.hpp	/^    namespace net$/;"	n	namespace:rcss
+net	isocketstream.hpp	/^    namespace net$/;"	n	namespace:rcss
+net	osocketstream.hpp	/^    namespace net$/;"	n	namespace:rcss
+net	socket.cpp	/^    namespace net$/;"	n	namespace:rcss	file:
+net	socket.hpp	/^    namespace net$/;"	n	namespace:rcss
+net	socketstreambuf.hpp	/^    namespace net$/;"	n	namespace:rcss
+net	tcpsocket.cpp	/^    namespace net$/;"	n	namespace:rcss	file:
+net	tcpsocket.hpp	/^    namespace net$/;"	n	namespace:rcss
+net	udpsocket.cpp	/^    namespace net$/;"	n	namespace:rcss	file:
+net	udpsocket.hpp	/^    namespace net$/;"	n	namespace:rcss
+nets	Net.h	/^	map<string, Net*>nets;$/;"	m	class:NetManager
+open	socket.cpp	/^        Socket::open()$/;"	f	class:rcss::net::Socket
+operator !=	addr.cpp	/^        operator!=( const Addr& a,$/;"	f	namespace:rcss::net
+operator <	addr.cpp	/^        operator < ( const Addr& a,$/;"	f	namespace:rcss::net
+operator <<	addr.cpp	/^        operator<<( std::ostream& o, const rcss::net::Addr& addr )$/;"	f	namespace:rcss::net
+operator ==	addr.cpp	/^        operator==( const Addr& a,$/;"	f	namespace:rcss::net
+overflow	socketstreambuf.hpp	/^            overflow( int_type c = EOF )$/;"	f	class:rcss::net::SocketStreamBuf
+rcss	addr.cpp	/^namespace rcss$/;"	n	file:
+rcss	addr.hpp	/^namespace rcss$/;"	n
+rcss	exception.cpp	/^namespace rcss$/;"	n	file:
+rcss	exception.hpp	/^namespace rcss$/;"	n
+rcss	handler.cpp	/^namespace rcss$/;"	n	file:
+rcss	handler.hpp	/^namespace rcss$/;"	n
+rcss	iosocketstream.hpp	/^namespace rcss$/;"	n
+rcss	isocketstream.hpp	/^namespace rcss$/;"	n
+rcss	osocketstream.hpp	/^namespace rcss$/;"	n
+rcss	socket.cpp	/^namespace rcss$/;"	n	file:
+rcss	socket.hpp	/^namespace rcss$/;"	n
+rcss	socketstreambuf.hpp	/^namespace rcss$/;"	n
+rcss	tcpsocket.cpp	/^namespace rcss$/;"	n	file:
+rcss	tcpsocket.hpp	/^namespace rcss$/;"	n
+rcss	udpsocket.cpp	/^namespace rcss$/;"	n	file:
+rcss	udpsocket.hpp	/^namespace rcss$/;"	n
+recv	socket.cpp	/^        Socket::recv( char* msg,$/;"	f	class:rcss::net::Socket
+recv	socket.cpp	/^        Socket::recv( int timeout,$/;"	f	class:rcss::net::Socket
+selectNetwork	Net.cpp	/^Net& NetManager::selectNetwork(string name)$/;"	f	class:NetManager
+send	socket.cpp	/^        Socket::send( const char* msg,$/;"	f	class:rcss::net::Socket
+setAddr	addr.cpp	/^	    setAddr( Addr::PortType port, Addr::HostType host )$/;"	f	class:rcss::net::AddrImpl	file:
+setAsync	socket.cpp	/^        Socket::setAsync( bool on )$/;"	f	class:rcss::net::Socket
+setBroadcast	socket.cpp	/^        Socket::setBroadcast( bool on )$/;"	f	class:rcss::net::Socket
+setCloseOnExec	socket.cpp	/^        Socket::setCloseOnExec( bool on )$/;"	f	class:rcss::net::Socket
+setConnectType	socketstreambuf.hpp	/^            setConnectType( ConnType conn )$/;"	f	class:rcss::net::SocketStreamBuf
+setEndPoint	socketstreambuf.hpp	/^            setEndPoint( const Addr& addr )$/;"	f	class:rcss::net::SocketStreamBuf
+setHost	addr.cpp	/^            setHost( Addr::HostType host )$/;"	f	class:rcss::net::AddrImpl
+setHost	addr.cpp	/^            setHost( const std::string& host )$/;"	f	class:rcss::net::AddrImpl
+setHost	addr.cpp	/^        Addr::setHost( HostType host )$/;"	f	class:rcss::net::Addr
+setHost	addr.cpp	/^        Addr::setHost( const std::string& host )$/;"	f	class:rcss::net::Addr
+setHostRaw	addr.cpp	/^            setHostRaw( Addr::HostType host )$/;"	f	class:rcss::net::AddrImpl	file:
+setNonBlocking	socket.cpp	/^        Socket::setNonBlocking( bool on )$/;"	f	class:rcss::net::Socket
+setPort	addr.cpp	/^            setPort( Addr::PortType port )$/;"	f	class:rcss::net::AddrImpl
+setPort	addr.cpp	/^            setPort( const std::string& port,$/;"	f	class:rcss::net::AddrImpl
+setPort	addr.cpp	/^        Addr::setPort( PortType port )$/;"	f	class:rcss::net::Addr
+setPort	addr.cpp	/^        Addr::setPort( const std::string& port,$/;"	f	class:rcss::net::Addr
+setPortRaw	addr.cpp	/^            setPortRaw( Addr::PortType port )$/;"	f	class:rcss::net::AddrImpl	file:
+socklen_t	socket.cpp	/^typedef int socklen_t;$/;"	t	file:
+sync	socketstreambuf.hpp	/^            sync()$/;"	f	class:rcss::net::SocketStreamBuf
+underflow	socketstreambuf.hpp	/^	    underflow()$/;"	f	class:rcss::net::SocketStreamBuf
+valid	handler.hpp	/^            bool valid() const$/;"	f	class:rcss::net::Handler
+what	exception.cpp	/^        AcceptErr::what() const throw()$/;"	f	class:rcss::net::AcceptErr
+what	exception.cpp	/^        BindErr::what() const throw()$/;"	f	class:rcss::net::BindErr
+what	exception.cpp	/^        ConnectErr::what() const throw()$/;"	f	class:rcss::net::ConnectErr
+what	exception.cpp	/^        GetNameErr::what() const throw()$/;"	f	class:rcss::net::GetNameErr
+what	exception.cpp	/^        HostNotFound::what() const throw()$/;"	f	class:rcss::net::HostNotFound
+what	exception.cpp	/^        ListenErr::what() const throw()$/;"	f	class:rcss::net::ListenErr
+what	exception.cpp	/^        OpenErr::what() const throw()$/;"	f	class:rcss::net::OpenErr
+writeData	socketstreambuf.hpp	/^            writeData()$/;"	f	class:rcss::net::SocketStreamBuf
+~Handler	handler.cpp	/^		Handler::~Handler()$/;"	f	class:rcss::net::Handler
+~Net	Net.cpp	/^Net::~Net()$/;"	f	class:Net
+~Socket	socket.cpp	/^        Socket::~Socket()$/;"	f	class:rcss::net::Socket
+~SocketStreamBuf	socketstreambuf.hpp	/^            ~SocketStreamBuf()$/;"	f	class:rcss::net::SocketStreamBuf
